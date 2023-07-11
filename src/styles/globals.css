@@ -1,4 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+    height: 100%;
+}
+
+@media (min-height: 100vh) {
+    footer {
+        position: absolute;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+.animate-fade-in-2 {
+    animation: fade-in-2 2s ease-in-out forwards;
+}
+
+.delay-2000 {
+    animation-delay: 2s;
+}
+
+.delay-4000 {
+    animation-delay: 4s;
+}
+
+#name {
+    font-size: 200px;
+    line-height: 0.8em;
+}
