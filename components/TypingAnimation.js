@@ -1,10 +1,10 @@
 import React from 'react';
 import Typed from 'react-typed';
 
-// TODO finish main page and keep developer on the bottom of the python java javascript rotation
+// TODO finish main page
 const TypingAnimation = () => {
     const options = {
-        strings: ['Java', 'JavaScript', 'Python'],
+        strings: ['Java', 'React', 'Python'],
         typeSpeed: 50,
         backSpeed: 50,
         loop: true,
@@ -15,7 +15,7 @@ const TypingAnimation = () => {
 
     return (
         <div id="name" className="font-extrabold animate-fade-in-2">
-            <Typed {...options} /> developer
+            <Typed {...options} /> <br /> developer
         </div>
     );
 };
